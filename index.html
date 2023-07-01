@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav>
+        <div class="left">
+             <div class="icon">
+                <img src="icon.png">
+             </div>
+             <div class="logo">
+                <img src="Youtube-Logo.png">
+             </div>
+        </div>
+        <div class="middle">
+            <div class="input">
+                <input type="search" placeholder="Search" id="search">
+                <button type="button" onclick="displaySearchResult()">
+                    <img src="search.png" alt="search_logo" id="search_logo">
+                </button>
+            </div>
+            <div class="icon">
+                <img src="mic.png" alt="">
+            </div>
+        </div>
+        <div class="right">
+            <div class="icon">
+                <img src="Create.png" alt="">
+            </div>
+            <div class="icon">
+                <img src="apps.png" alt="">
+            </div>
+            <div class="icon">
+                <img src="notifications.png" alt="">
+            </div>
+            <div class="icon">
+                <img src="Profile-pic.png" alt="">
+            </div> 
+        </div>
+    </nav>
+    <div class="main-container">
+        <aside class="aside">
+            <div class="upper-aside">
+                <div class="inner-upper-aside">
+                    <img src="home.png" alt="">
+                    <div class="text">
+                        Home
+                    </div>
+                </div>
+                <div class="inner-upper-aside">
+                    <img src="explore.png" alt="">
+                    <div class="text">
+                        Explore
+                    </div>
+                </div>
+                <div class="inner-upper-aside">
+                    <img src="subscription.png" alt="">
+                    <div class="text">
+                        Subscriptions
+                    </div>
+                </div>  
+            </div>
+            <div class="middle-aside">
+                <div class="upper-aside">
+                    <div class="inner-upper-aside">
+                        <img src="library.png" alt="">
+                        <div class="text">
+                            Library
+                        </div>
+                    </div>
+                    <div class="inner-upper-aside">
+                        <img src="history.png" alt="">
+                        <div class="text">
+                            History
+                        </div>
+                    </div>
+                    <div class="inner-upper-aside">
+                        <img src="yourVideo.png" alt="">
+                        <div class="text">
+                            Your Videos
+                        </div>
+                    </div>
+                    <div class="inner-upper-aside">
+                        <img src="watchLater.png" alt="">
+                        <div class="text">
+                            Watch Later
+                        </div>
+                    </div>
+                    <div class="inner-upper-aside">
+                        <img src="likedVideos.png" alt="">
+                        <div class="text">
+                            Liked Videos
+                        </div>
+                    </div>
+                    <div class="inner-upper-aside">
+                        <img src="showMore.png" alt="">
+                        <div class="text">
+                            Show More
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            <div class="subscription-aside">
+                <div class="upper-aside">
+                    <div class="inner-upper-aside">
+                        <img src="p1.png" alt="">
+                        <div class="text">
+                            James Gouse
+                        </div>
+                    </div>
+                    <div class="inner-upper-aside">
+                        <img src="p2.png" alt="">
+                        <div class="text">
+                            Alan Cooper
+                        </div>
+                    </div>
+                    <div class="inner-upper-aside">
+                        <img src="p3.png" alt="">
+                        <div class="text">
+                            Marcus Levin
+                        </div>
+                    </div>
+                    <div class="inner-upper-aside">
+                        <img src="p4.png" alt="">
+                        <div class="text">
+                            Skylar Dias
+                        </div>
+                    </div>
+                    <div class="inner-upper-aside">
+                        <img src="p5.png" alt="">
+                        <div class="text">
+                            Alexis Sears
+                        </div>
+                    </div>
+                    <div class="inner-upper-aside">
+                        <img src="p6.png" alt="">
+                        <div class="text">
+                            Jesica Lambert
+                        </div>
+                    </div>
+                    <div class="inner-upper-aside">
+                        <img src="p7.png" alt="">
+                        <div class="text">
+                            Anna White
+                        </div>
+                    </div>
+                    <div class="inner-upper-aside">
+                        <img src="showMore.png" alt="">
+                        <div class="text">
+                            Show 13 more
+                        </div>
+                    </div>
+                     
+                </div>
+            </div>
+            <div class="explore-aside">
+
+            </div>
+        </aside>
+        
+        <div id="videos-container">
+            <h4>Loading...</h4>
+        </div>
+        
+        
+    </div>
+<script src="scripts/index.js">
+    let searchsString= "army";
+    const apiKey = "AIzaSyC4r3jhgoiHp3UMe1PRhImcwIhZI6HlPMc"
+    const endpoint = 'https://www.googleapis.com/youtube/v3/search?key=$
+    {apiKey}&part=snippet&type=video&maxResult$=3';
+</script>
+</body>
+</html>
